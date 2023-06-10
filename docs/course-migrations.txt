@@ -1,0 +1,7 @@
+dotnet ef migrations add AddCourseTable --project .\src\Modules\Courses\Education.Courses.Infrastructure\ --context CourseDbContext --startup-project .\src\API\Education.API\
+
+dotnet ef database update --project .\src\Modules\Courses\Education.Courses.Infrastructure\ --context CourseDbContext --startup-project .\src\API\Education.API\
+
+dotnet ef migrations remove --project .\src\Modules\Courses\Education.Courses.Infrastructure\ --context CourseDbContext --startup-project .\src\API\Education.API\
+
+dotnet ef database drop --project .\src\Modules\Courses\Education.Courses.Infrastructure\ --context CourseDbContext --startup-project .\src\API\Education.API\

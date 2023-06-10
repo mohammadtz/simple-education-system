@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Common\Education.Common\Education.Common.csproj" />
+      <ProjectReference Include="..\..\Courses\Education.Courses.Event\Education.Courses.Event.csproj" />
+      <ProjectReference Include="..\Education.Financial.Event\Education.Financial.Event.csproj" />
+      <ProjectReference Include="..\Education.Financial.Infrastructure\Education.Financial.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>

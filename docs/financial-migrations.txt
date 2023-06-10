@@ -1,0 +1,7 @@
+dotnet ef migrations add UpdateInvoice --project .\src\Modules\Financial\Education.Financial.Infrastructure\ --context FinancialDbContext --startup-project .\src\API\Education.API\
+
+dotnet ef database update --project .\src\Modules\Financial\Education.Financial.Infrastructure\ --context FinancialDbContext --startup-project .\src\API\Education.API\
+
+dotnet ef migrations remove --project .\src\Modules\Financial\Education.Financial.Infrastructure\ --context FinancialDbContext --startup-project .\src\API\Education.API\
+
+dotnet ef database drop --project .\src\Modules\Financial\Education.Financial.Infrastructure\ --context FinancialDbContext --startup-project .\src\API\Education.API\
